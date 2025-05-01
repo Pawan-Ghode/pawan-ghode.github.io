@@ -1,54 +1,91 @@
+:root {
+  --main-bg: #f0f4f8;
+  --primary-color: #007acc;
+  --text-color: #333;
+  --header-bg: #001f3f;
+  --card-bg: #ffffff;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-    color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: var(--main-bg);
+  color: var(--text-color);
 }
 
 header {
-    background-color: #4a90e2;
-    color: white;
-    padding: 2em;
-    text-align: center;
+  background-color: var(--header-bg);
+  color: white;
+  padding: 2em;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: var(--primary-color);
+  text-align: center;
 }
 
 section {
-    padding: 2em;
-    margin: 1em auto;
-    max-width: 900px;
-    background-color: white;
-    border-radius: 12px;
-    border: 2px solid #e0e0e0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about p {
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 1.6em;
 }
 
 .skills-grid {
-    display: flex;
-    gap: 2em;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 2em;
 }
 
 .skill {
-    text-align: center;
-    border: 2px solid #ccc;
-    border-radius: 12px;
-    padding: 1em;
-    width: 120px;
-    background-color: #fff;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5em;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 140px;
 }
 
 .skill:hover {
-    transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
 }
 
 .skill img {
-    width: 64px;
-    height: 64px;
-    object-fit: contain;
-    margin-bottom: 0.5em;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 0.95em;
+}
+
+footer a {
+  color: #00cfff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
