@@ -1,6 +1,7 @@
-// Example: highlight a skill on click
-document.querySelectorAll(".skill").forEach(skill => {
-    skill.addEventListener("click", () => {
-        alert(`You clicked on ${skill.querySelector("p").textContent}!`);
-    });
+// Optional: Alert on skill click
+document.querySelectorAll('.skill').forEach(skill => {
+  skill.addEventListener('click', () => {
+    const name = skill.querySelector('p').textContent;
+    alert(`You clicked on ${name}`);
+  });
 });
